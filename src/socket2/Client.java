@@ -29,7 +29,8 @@ public class Client {
 
         }
         catch (Exception e) {
-            e.printStackTrace();
+            System.err.println(e);
+            System.out.println("채팅을 종료합니다.");
         }
     }
 }

@@ -29,7 +29,7 @@ public class Server {
             String msg;
             System.out.print("메시지: ");
 
-            while((msg = sc.nextLine()) != "exit") {
+            while(!(msg = sc.nextLine()).equals("exit")) {
                 oos.writeObject(msg);
                 oos.flush();
                 msg = (String)ois.readObject();
